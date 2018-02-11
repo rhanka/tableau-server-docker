@@ -31,6 +31,12 @@ build:
 up: network
 	docker-compose up -d
 
+down:
+	docker-compose down
+
+restart: down up
+
+
 clean:
 	docker ps -aq --no-trunc | xargs docker rm
 
