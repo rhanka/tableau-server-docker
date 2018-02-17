@@ -2,7 +2,12 @@ EDITOR=vim
 
 include /etc/os-release
 
-all: install-prerequisites regconfig build
+all: download install-prerequisites regconfig build
+
+
+download:
+	wget https://downloads.tableau.com/esdalt/10.5.0/tableau-server-10-5-0.x86_64.rpm
+	wget https://downloads.tableau.com/esdalt/10.5.0/tableau-tabcmd-10-5-0.noarch.rpm
 
 install-prerequisites:
 ifeq ("$(wildcard /usr/bin/docker)","")
