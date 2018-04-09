@@ -49,7 +49,7 @@ su tsm -c "sudo /opt/tableau/tableau_server/packages/customer-bin.${TABLEAU_SERV
 log initalize server done
 
 log initialuser 
-su tsm -c "sudo /opt/tableau/tableau_server/packages/bin.${TABLEAU_SERVER_DATA_DIR_VERSION}/tabcmd initialuser --server localhost:80 --username admin --password admin" 2>&1 1>> /var/log/tableau_docker.log
+su tsm -c "sudo /opt/tableau/tableau_server/packages/bin.${TABLEAU_SERVER_DATA_DIR_VERSION}/tabcmd initialuser --server localhost:80 --username antoinefa --password *temp:P4SS!" 2>&1 1>> /var/log/tableau_docker.log
 log all done
 
 
